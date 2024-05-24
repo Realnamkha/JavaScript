@@ -28,3 +28,25 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId);
+
+//Memory
+// stack(primitive) and Heap (Non-primitive)
+let name = "NAMKHA"
+let another = name
+
+another = "gyatso"
+console.log(name)
+console.log(another)
+
+
+let userOne = {
+    email : "user@gmail.com",
+    upi : "1234"
+}
+
+let userTwo= userOne
+userTwo.email = "namkha@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
