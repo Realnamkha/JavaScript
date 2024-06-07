@@ -19,11 +19,11 @@ const user = {
 // }
 // chai()
 
-const chai = () => {
-        let username="Namkha"
-        console.log(this)
-}
-chai()
+// const chai = () => {
+//         let username="Namkha"
+//         console.log(this)
+// }
+// chai()
 
 // const addTwo = (num1, num2) => {
 //     return num1 + num2

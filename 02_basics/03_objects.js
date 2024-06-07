@@ -19,6 +19,7 @@ const JsUser = {
 }
 console.log(JsUser.email) // not good as you can see below
 console.log(JsUser["email"])
+console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 // console.log(typeof JsUser[mySym])
 
@@ -36,5 +37,5 @@ JsUser.greeting = function(){
 JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+JsUser.greeting();
+JsUser.greetingTwo();
