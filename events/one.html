@@ -31,24 +31,26 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+    // bubbling up as it goes from down to up
+
     document.getElementById('images').addEventListener('click', function(e){
         console.log("clicked inside the ul");
     }, false)
 
     document.getElementById('owl').addEventListener('click', function(e){
         console.log("owl clicked");
-        e.stopPropagation()
-    }, false)
+        e.stopPropagation()//it does not for the top
+    }, false) //true makes capturing mode ie it goes from top to down
     
     document.getElementById('google').addEventListener('click',function(e){
-        e.preventDefault();
+        e.preventDefault(); // it prevents the deufault behaviour of the element
         e.stopPropagation()
         console.log("google clicked");
     }, false)
    
     
     document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
+        console.log(e.target.tagName); //e.target.ParentNode brings to the parent
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
             let removeIt = e.target.parentNode
