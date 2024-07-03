@@ -21,7 +21,7 @@ const user = {
 
 // const chai = () => {
 //         let username="Namkha"
-//         console.log(this)
+//         console.log(this) // `this` is lexically bound, taking the value from the enclosing scope.
 // }
 // chai()
 

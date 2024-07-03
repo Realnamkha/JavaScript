@@ -10,7 +10,7 @@ function add(num1,num2){
 // const result = add(3,"a")
 // console.log(result)
 
-function loginUserMessage(username = "sam"){
+function loginUserMessage(username="namkha"){
     if(!username){
         console.log("PLease enter a username");
         return
@@ -18,14 +18,15 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage())
+console.log(loginUserMessage())
 
 
 function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+// console.log(calculateCartPrice(200, 400, 500, 2000)) // First two parameters are passed to val1 and val2 and rest are stored as 
+// array to the num1
 
 // const user = {
 //     username: "hitesh",
