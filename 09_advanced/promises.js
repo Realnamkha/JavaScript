@@ -1,5 +1,8 @@
+// The promise object represents the eventual completion(or failure) of an asynchronous operations and its resulting value
+// The promise is mostly consumed
+// Here we create promiseOne and Promise is an object
 // const promiseOne = new Promise(function(resolve, reject){
-//     //Do an async task
+//     // Do an async task
 //     // DB calls, cryptography, network
 //     setTimeout(function(){
 //         console.log('Async task is compelete');
@@ -63,7 +66,7 @@ const promiseFive = new Promise(function(resolve, reject){
 
 async function consumePromiseFive(){
     try {
-        const response = await promiseFive //async and await directlt cant handle errors
+        const response = await promiseFive //async and await directly cant handle errors and better to use try and catch block
         console.log(response);
     } catch (error) {
         console.log(error);

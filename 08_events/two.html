@@ -25,7 +25,7 @@
     // setTimeout(sayNamkha,2000); //settime out taking function as arguments(give only reference of the function)
     const changeMe = setTimeout(changeText,2000);
     document.querySelector("#stop").addEventListener('click',function(e){
-        clearTimeout(changeMe);
+        clearTimeout(changeMe); // cleartimeout is linked to setTimeout
         console.log("STOPPP");
     })
 </Script>

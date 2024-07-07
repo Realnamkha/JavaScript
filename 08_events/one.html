@@ -35,10 +35,10 @@
 
     document.getElementById('images').addEventListener('click', function(e){
         console.log("clicked inside the ul");
-    }, false)
+    }, false) // false is default i.e event bubbling
 
     document.getElementById('owl').addEventListener('click', function(e){
-        console.log("owl clicked");
+        console.log("owl clicked"); // owl is inside ul
         e.stopPropagation()//it does not for the top
     }, false) //true makes capturing mode ie it goes from top to down
     
