@@ -22,6 +22,7 @@ console.log(JsUser["email"])
 console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 // console.log(typeof JsUser[mySym])
+// console.log(typeof mySym) symbol
 
 // console.log(JsUser["full name"]) 
 // console.log(JsUser["full name"])
