@@ -1,4 +1,7 @@
 // for of
+// The for...of loop gives you the values directly from the iterable, not the indices.
+// This is different from the for...in loop, which iterates over the keys (or indices) of an object or array.
+// It is particularly useful when you don't need the index and only care about the values.
 
 // ["", "", ""]
 // [{}, {}, {}]

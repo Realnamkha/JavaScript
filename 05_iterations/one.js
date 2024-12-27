@@ -16,7 +16,6 @@ for (let i = 1; i <= 10; i++) {
     console.log(`Inner loop value ${j} and inner loop ${i}`);
     console.log(i + '*' + j + ' = ' + i*j );
    }
-    
 }
 
 // let myArray = ["flash", "batman", "superman"]

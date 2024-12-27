@@ -30,6 +30,14 @@ let val1;
 // val1 = undefined ?? 15
 // val1 = null ?? 10 ?? 20
 
+let result;
+
+result = 0 ?? 10;       // 0 is not nullish, so result is 0
+result = false ?? true; // false is not nullish, so result is false
+result = "" ?? "Default"; // "" is not nullish, so result is ""
+
+result = null ?? "Fallback"; // null is nullish, so result is "Fallback"
+result = undefined ?? "Fallback"; // undefined is nullish, so result is "Fallback"
 
 
 // console.log(val1);
