@@ -15,7 +15,7 @@
 <script>
     const requestUrl = 'https://api.github.com/users/Realnamkha'
     const xhr = new XMLHttpRequest(); // new object creation
-    xhr.open('GET', requestUrl)
+    xhr.open('GET', requestUrl) // method and url
     xhr.onreadystatechange = function(){ //stage change detect
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
