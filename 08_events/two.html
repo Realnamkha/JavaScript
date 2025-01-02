@@ -11,21 +11,21 @@
 </body>
 <Script>
     // setTimeout(function(){
-    //     console.log("Namkha") //settimeout is only for one time
+    //     console.log("Namkha") //settimeout is only for one time so it prints this only once
     // },2000)
 
     const sayNamkha = function(){
-        console.log("Namkha"); //settimeout is only for one time
+        console.log("Namkha"); // settimeout is only for one time
     }
 
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best js series";
     }
 
-    // setTimeout(sayNamkha,2000); //settime out taking function as arguments(give only reference of the function)
-    const changeMe = setTimeout(changeText,2000);
+    // setTimeout(sayNamkha,2000); // settime out taking function as arguments(give only reference of the function)
+    const changeMe = setTimeout(changeText,2000); // changes text after 2s
     document.querySelector("#stop").addEventListener('click',function(e){
-        clearTimeout(changeMe); // cleartimeout is linked to setTimeout
+        clearTimeout(changeMe); // cleartimeout is linked to setTimeout(Reference needs to be passed so that it knows which to execute)
         console.log("STOPPP");
     })
 </Script>
