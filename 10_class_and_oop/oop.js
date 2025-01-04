@@ -35,7 +35,7 @@ function User(username, loginCount, isLoggedIn){
 
     }
 
-    return this
+    return this // implicitly defined
 }
 const userOne = new User("hitesh", 12, true) // new empty instance is created,construtor function is called , this keyworord is injected
 const userTwo = new User("ChaiAurCode", 11, false)

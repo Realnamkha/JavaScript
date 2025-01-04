@@ -6,6 +6,7 @@ function multipleBy5(num){
 // console.log(multipleBy5(4));
 // console.log(multipleBy5.power);
 // console.log(multipleBy5.prototype);
+// Functions also acts as object
 
 function createUser(username,score){
     this.username = username
@@ -19,7 +20,7 @@ createUser.prototype.printme = function(){
     console.log(`score is ${this.score}`);
 }
 
-const chai = new createUser("chai", 25) // new tells that additional properties are present
+const chai = new createUser("chai", 25) // new tells that additional properties are present that we created above
 const tea = createUser("tea", 250)
 
 // MimeTypeArray.prototype.map // behinf the scene

@@ -1,3 +1,11 @@
+
+// Prototypical behavior in JavaScript refers to how objects inherit properties 
+// and methods from other objects through the prototype chain. JavaScript uses prototypes
+//  to enable object-oriented programming and inheritance, allowing objects to share functionality.
+// Everything is object in JS
+// String -> Object -> Null
+// Array -> Object -> Null
+
 let myName = "namkha     "
 // let mychannel = "chai     "
 

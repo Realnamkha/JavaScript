@@ -6,7 +6,7 @@ function SetUsername(username){
 
 function createUser(username, email, password){
     // SetUsername(username) // The function is being called but as soon as it is called it is removed from exexution context
-    SetUsername.call(this, username) // do this in mine
+    SetUsername.call(this, username) // do this in mine and it holds the reference
    
     this.email = email
     this.password = password
