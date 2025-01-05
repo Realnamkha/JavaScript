@@ -18,3 +18,6 @@ class User {
 }
 const namkha = new User("namkha.ai", "abc")
 console.log(namkha.email);
+
+// Getter and setter both must be defined
+// getter and setter takes priorities over constructor in setting of values
