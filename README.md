@@ -1,1 +1,1 @@
-# 30_days_of_Javascript
+# JS from basic to advanced level
